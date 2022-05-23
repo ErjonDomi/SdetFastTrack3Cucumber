@@ -35,15 +35,16 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
                         <include>**/CukesRunner*.java</include>
-                        <!-- <include>**/FailedTestRunner*.java</include> -->
+                         <include>**/FailedTestRunner*.java</include>
                     </includes>
                     <systemPropertyVariables>
-                        <!--  <environment>dev</environment>  -->
-                        <!--  <webdriver.driver>chrome</webdriver.driver> -->
-                        <!--  <browser.lifecycle>class</browser.lifecycle> -->
+                         <environment>dev</environment>
+                          <webdriver.driver>chrome</webdriver.driver>
+                          <browser.lifecycle>class</browser.lifecycle>
                         <lang>en</lang>
                         <provpassword>ICf9pm9S</provpassword>
                         <mailpassword>PASSWORD</mailpassword>
+                        <username></username>
                     </systemPropertyVariables>
 
                 </configuration>

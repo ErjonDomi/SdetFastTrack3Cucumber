@@ -4,19 +4,19 @@ public class DataTableLibrary {
 
 
     /**
-     * http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
-     * C#27: SmartBear order process
+     *https:https://library2.cydeo.com/login.html
+     * C#27: Library Login
      * Scenario: User should be able to login with
      * correct credentials
-     *  Given User is on the login page of SmartBear
+     *  Given User is on the login page of Library App
      *  When User enters below info
-     *  |username|Tester|
-     *  |password|test |
-     *  Then User should see title changed to Web Orders
+     *  |username|student1@library|
+     *  |password|d5fv9BtX|
+     *  Then User should see dashboard
      */
 
     /**
-     * TC##0020  http://practice.cybertekschool.com/dropdown
+     * TC##0020  https://practice.cydeo.com/dropdown
      * Feature: Simple examples of how dataTables work
      *erjon
      *   @dataTable

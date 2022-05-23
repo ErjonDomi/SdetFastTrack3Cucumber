@@ -1,0 +1,75 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-22T20:06:02.252Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sdet_fast_track.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Etsy title verification",
+        "description": "",
+        "id": "etsy-title-verification;etsy-title-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 1815000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sdet_fast_track.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8134000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "When User is on the etsy page",
+            "match": {
+              "location": "com.sdet_fast_track.step_definitions.Etsy_Step_Definition.when_user_is_on_the_etsy_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Title should be Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone",
+            "match": {
+              "location": "com.sdet_fast_track.step_definitions.Etsy_Step_Definition.title_should_be_etsy_shop_for_handmade_vintage_custom_and_unique_gifts_for_everyone()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Etsy Title verification",
+    "description": "",
+    "id": "etsy-title-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/serch.feature",
+    "tags": []
+  }
+]

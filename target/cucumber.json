@@ -3,11 +3,32 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-05-22T20:06:02.252Z",
+        "line": 3,
+        "name": "user is on login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7509000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.sdet_fast_track.step_definitions.LoginSteps.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-25T00:12:44.796Z",
         "before": [
           {
             "result": {
-              "duration": 5000000,
+              "duration": 11000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +36,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Etsy title verification",
+        "line": 15,
+        "name": "",
         "description": "",
-        "id": "etsy-title-verification;etsy-title-verification",
+        "id": "testing-login-page;",
         "after": [
           {
             "result": {
-              "duration": 1815000000,
+              "duration": 2104000000,
               "status": "passed"
             },
             "match": {
@@ -35,25 +56,49 @@
         "steps": [
           {
             "result": {
-              "duration": 8134000000,
+              "duration": 444000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "When User is on the etsy page",
+            "line": 16,
+            "name": "librarian enters username",
             "match": {
-              "location": "com.sdet_fast_track.step_definitions.Etsy_Step_Definition.when_user_is_on_the_etsy_page()"
+              "location": "com.sdet_fast_track.step_definitions.LoginSteps.librarian_enters_username()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 20000000,
+              "duration": 248000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Title should be Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone",
+            "line": 17,
+            "name": "librarian enters password",
             "match": {
-              "location": "com.sdet_fast_track.step_definitions.Etsy_Step_Definition.title_should_be_etsy_shop_for_handmade_vintage_custom_and_unique_gifts_for_everyone()"
+              "location": "com.sdet_fast_track.step_definitions.LoginSteps.librarian_enters_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "librarian click login button",
+            "match": {
+              "location": "com.sdet_fast_track.step_definitions.LoginSteps.librarian_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1822000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "librarian should see his username displayed.",
+            "match": {
+              "location": "com.sdet_fast_track.step_definitions.LoginSteps.librarian_should_see_his_username_displayed()"
             },
             "keyword": "Then "
           }
@@ -65,11 +110,11 @@
         ]
       }
     ],
-    "name": "Etsy Title verification",
+    "name": "Testing login page",
     "description": "",
-    "id": "etsy-title-verification",
+    "id": "testing-login-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/serch.feature",
+    "uri": "file:src/test/resources/features/Login.feature",
     "tags": []
   }
 ]

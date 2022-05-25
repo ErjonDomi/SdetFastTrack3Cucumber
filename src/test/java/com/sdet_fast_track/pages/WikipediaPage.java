@@ -1,7 +1,30 @@
 package com.sdet_fast_track.pages;
 
 
+import com.sdet_fast_track.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class WikipediaPage {
+
+    public WikipediaPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(xpath = "//input[@id='searchInput']")
+    public WebElement searchInput;
+
+    @FindBy(xpath = "//input[@id='searchButton']")
+    public WebElement searchButton;
+
+    @FindBy(xpath = "//h1[@id='firstHeading']")
+    public WebElement headerText;
+
+    @FindBy(xpath = "//th[@class='infobox-above']/div")
+    public WebElement imageText;
+
+
 
     /**
      * TC#25: Wikipedia Search Functionality Title Verification

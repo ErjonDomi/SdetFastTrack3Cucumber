@@ -11,7 +11,7 @@ Feature: Testing login page
     And student clicks login button
     Then student should see dashboard
 
-  @wip
+
     Scenario:
       When librarian enters username
       And librarian enters password

@@ -1,1 +1,1 @@
-file:src/test/resources/features/wikipedia.feature:19
+file:src/test/resources/features/DataTable.feature:4

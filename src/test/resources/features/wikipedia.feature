@@ -1,23 +1,42 @@
-
-  Feature: Wikipedia search feature
-
-
-    Scenario: Wikipedia title verifcation
-      Given user is in the wikipedia main page
-      When user searches for Steve Job
-      And user clicks search button
-      Then user should see Steve Jobs in title
+Feature: Wikipedia search feature
 
 
-      Scenario: Wikipedia header verification
-        Given user is in the wikipedia main page
-        When user searches for Steve Job
-        And user clicks search button
-        Then user should see Steve Jobs on the header
+  Scenario: Wikipedia title verifcation
+    Given user is in the wikipedia main page
+    When user searches for Steve Job
+    And user clicks search button
+    Then user should see Steve Jobs in title
 
-      @wip
-      Scenario: Wikipedia image header verification
-        Given user is in the wikipedia main page
-        When user searches for Steve Job
-        And user clicks search button
-        Then user should see Steve Jobs in Image header text
+
+  Scenario: Wikipedia header verification
+    Given user is in the wikipedia main page
+    When user searches for Steve Job
+    And user clicks search button
+    Then user should see Steve Jobs on the header
+
+  Scenario: Wikipedia image header verification
+    Given user is in the wikipedia main page
+    When user searches for Steve Job
+    And user clicks search button
+    Then user should see Steve Jobs in Image header text
+
+
+  Scenario: Wikipedia title verifcation
+    Given user is in the wikipedia main page
+    When user searches for "Steve Jobs"
+    And user clicks search button
+    Then user should see "Steve Jobs" in title
+
+
+  Scenario: Wikipedia header verification
+    Given user is in the wikipedia main page
+    When user searches for "Steve Jobs"
+    And user clicks search button
+    Then user should see "Steve Jobs" on the header
+
+
+  Scenario: Wikipedia image header verification
+    Given user is in the wikipedia main page
+    When user searches for "Steve Jobs"
+    And user clicks search button
+    Then user should see "Steve Jobs1332" in Image header text

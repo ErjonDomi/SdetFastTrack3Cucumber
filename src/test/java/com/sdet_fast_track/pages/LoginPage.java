@@ -24,6 +24,14 @@ public class LoginPage {
     @FindBy(xpath = "//a[@id='navbarDropdown']/span")
     public WebElement userNameText;
 
+    @FindBy(xpath = "//span[text()='Users']/..")
+    public WebElement usersLink;
+
+    @FindBy(xpath = "//select[@name='tbl_users_length']")
+    public WebElement numbersPerPage;
+
+
+
     /**
      * TC#1:
      * Task summary:

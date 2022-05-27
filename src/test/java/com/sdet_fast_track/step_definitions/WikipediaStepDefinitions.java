@@ -83,4 +83,27 @@ public class WikipediaStepDefinitions {
         assertEquals("Image text did not match", expectedImageText, actualImageText);
 
     }
+
+    @Then("user should see {string} on the Image")
+    public void user_should_see_on_the_image(String expected) {
+        String actual = wikipediaPage.imageText.getText();
+        assertEquals(expected, actual);
+
+    }
+
+    @Then("user should see {string} on the title")
+    public void user_should_see_on_the_title(String expected) {
+
+        String actualTitle = Driver.getDriver().getTitle();
+        assertTrue(actualTitle.contains(expected));
+
+    }
+
+    @Then("user should see  {string}  on the header")
+    public void user_should_see_on_the_headers(String expected) {
+
+        String actual=wikipediaPage.headerText.getText();
+        assertEquals(expected,actual);
+
+    }
 }

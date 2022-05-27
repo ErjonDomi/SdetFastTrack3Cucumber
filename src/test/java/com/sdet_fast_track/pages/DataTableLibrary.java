@@ -1,6 +1,19 @@
 package com.sdet_fast_track.pages;
 
+import com.sdet_fast_track.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class DataTableLibrary {
+
+    public DataTableLibrary(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(id = "month")
+    public WebElement monthDropdown;
+
 
 
     /**
